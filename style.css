@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+p {
+  line-height: 3rem;
+}
+/* main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.container {
+  min-height: 100vh;
+  width: 1100px;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+.post {
+  background: rgb(139, 139, 139);
+  margin: 5rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-height: 230px;
+}
+
+.post_header .user-thumbnail {
+  height: 5rem;
+  width: 5rem;
+  background-color: rgb(199, 229, 255);
+  border-radius: 50%;
+}
+.post_header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post_header .user-name span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.post_body .text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.post_footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.post_footer .user-thumbnail {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgb(199, 229, 255);
+}
+.post_footer .user-name span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.comment {
+  background-color: white;
+  padding: 1rem;
+}
+.comment-text p {
+  font-size: 1.7rem;
+}
+button {
+  display: block;
+  margin-top: 2rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.comment-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 252, 252, 0.7);
+  margin: 0 auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* overflow-y: scroll; */
+  /* padding: 40rem 0; */
+}
+.modal-inner {
+  background-color: rgb(108, 108, 108);
+  padding: 2rem;
+}
+.comment-box {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.comment-box .user-thumbnail {
+  height: 5rem;
+  width: 5rem;
+  background-color: rgb(0, 255, 255);
+  border-radius: 50%;
+}
+.comment-box .user-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.comment-box .text {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.modal-expand {
+  display: flex !important;
+}
+.modal-close {
+  display: none !important;
+}
